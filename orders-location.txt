@@ -1,0 +1,260 @@
+
+
+ /orders
+ &
+ /orders/:location
+
+
+
+
+    {
+      id
+      locationNumber
+      status
+      user {
+        firstName
+        lastName
+      }
+      fulfillment {
+        destination
+        zones {
+          kpsFulfillmentDetails
+          dineIn
+          radius
+        }
+        vehicle {
+          id
+          make
+          model
+          color
+        }
+      }
+      origin {
+        id
+      }
+      timestamps {
+        submit
+        checkIn
+        ready
+        error
+        complete
+      }
+    }
+
+
+    {
+        "id": "920f0507-ce9c-4d23-85cc-ba4006b03874",
+        "locationNumber": "04259",
+        "status": "Ready",
+        "user": {
+            "firstName": "Toy",
+            "lastName": "S",
+            "__typename": "User"
+        },
+        "fulfillment": {
+            "destination": "Curbside",
+            "zones": {
+                "kpsFulfillmentDetails": "",
+                "dineIn": "5",
+                "radius": "A",
+                "__typename": "Zones"
+            },
+            "vehicle": {
+                "id": "f07bd925-352f-477a-981b-f4b30443c4bf",
+                "make": "Ford",
+                "model": "Van",
+                "color": "White",
+                "__typename": "Vehicle"
+            },
+            "__typename": "Fulfillment"
+        },
+        "origin": {
+            "id": "MobileAppV2",
+            "__typename": "Origin"
+        },
+        "timestamps": {
+            "submit": "2022-08-23T16:17:58Z",
+            "checkIn": "2022-08-23T16:18:00Z",
+            "ready": "2022-08-23T16:18:20Z",
+            "error": null,
+            "complete": null,
+            "__typename": "Timestamps"
+        },
+        "__typename": "Order"
+    }
+
+
+
+
+    [
+      {
+        "id": "920f0507-ce9c-4d23-85cc-ba4006b03874",
+        "locationNumber": "04259",
+        "status": "Ready",
+        "user": {
+            "firstName": "Toy",
+            "lastName": "S",
+        },
+        "fulfillment": {
+            "destination": "Curbside",
+            "zones": {
+                "kpsFulfillmentDetails": "",
+                "dineIn": "5",
+                "radius": "A",
+            },
+            "vehicle": {
+                "id": "f07bd925-352f-477a-981b-f4b30443c4bf",
+                "make": "Ford",
+                "model": "Van",
+                "color": "White",
+            },
+        },
+        "origin": {
+            "id": "MobileAppV2",
+        },
+        "timestamps": {
+            "submit": "2022-08-23T16:17:58Z",
+            "checkIn": "2022-08-23T16:18:00Z",
+            "ready": "2022-08-23T16:18:20Z",
+            "error": null,
+            "complete": null,
+        },
+      },
+
+      {
+        "id": "813a1b0b-b376-486c-961d-4c8eb853961d",
+        "locationNumber": "04259",
+        "status": "Ready",
+        "user": {
+            "firstName": "Heather",
+            "lastName": "S",
+        },
+        "fulfillment": {
+            "destination": "onDemand",
+            "zones": {
+                "kpsFulfillmentDetails": "",
+                "dineIn": "",
+                "radius": "",
+            },
+            "vehicle": {
+                "id": "",
+                "make": "",
+                "model": "",
+                "color": "",
+            },
+        },
+        "origin": {
+            "id": "UberEats",
+        },
+        "timestamps": {
+            "submit": "2022-08-23T16:11:44Z",
+            "checkIn": "2022-08-23T16:11:59Z",
+            "ready": "2022-08-23T16:14:10Z",
+            "error": null,
+            "complete": null,
+        },
+      },
+
+      {
+        "id": "b6f5f51d-7b17-4594-830f-dd5dbe239238",
+        "locationNumber": "04259",
+        "status": "Submit",
+        "user": {
+            "firstName": "Mckenzie",
+            "lastName": "H",
+        },
+        "fulfillment": {
+            "destination": "Curbside",
+            "zones": {
+                "kpsFulfillmentDetails": "",
+                "dineIn": "",
+                "radius": "",
+            },
+            "vehicle": {
+                "id": "b8ffbafe-8590-4661-aac0-b443d5e174c8",
+                "make": "Toyota",
+                "model": "SUV",
+                "color": "Silver",
+            },
+        },
+        "origin": {
+            "id": "MobileAppV2",
+        },
+        "timestamps": {
+            "submit": "2022-08-23T16:17:29Z",
+            "checkIn": null,
+            "ready": null,
+            "error": null,
+            "complete": null,
+        },
+      },
+
+      {
+        "id": "97979878-0970-4147-b946-90dd731bf8a0",
+        "locationNumber": "04259",
+        "status": "Submit",
+        "user": {
+            "firstName": "Meghan",
+            "lastName": "M",
+        },
+        "fulfillment": {
+            "destination": "Curbside",
+            "zones": {
+                "kpsFulfillmentDetails": "",
+                "dineIn": "",
+                "radius": "",
+            },
+            "vehicle": {
+                "id": "4f4cfc9b-e411-44d1-9c5f-c5d7578bd661",
+                "make": "Honda",
+                "model": "Car",
+                "color": "Silver",
+            },
+        },
+        "origin": {
+            "id": "MobileAppV2",
+        },
+        "timestamps": {
+            "submit": "2022-08-23T16:22:56Z",
+            "checkIn": null,
+            "ready": null,
+            "error": null,
+            "complete": null,
+        },
+      },
+
+      {
+        "id": "a512cafc-36be-4326-9b9a-98d108b133b4",
+        "locationNumber": "04259",
+        "status": "Submit",
+        "user": {
+            "firstName": "Bryson",
+            "lastName": "E",
+        },
+        "fulfillment": {
+            "destination": "CarryOut",
+            "zones": {
+                "kpsFulfillmentDetails": "",
+                "dineIn": "",
+                "radius": "",
+            },
+            "vehicle": {
+                "id": "",
+                "make": "",
+                "model": "",
+                "color": "",
+            },
+        },
+        "origin": {
+            "id": "MobileAppV2",
+        },
+        "timestamps": {
+            "submit": "2022-08-23T16:17:57Z",
+            "checkIn": null,
+            "ready": null,
+            "error": null,
+            "complete": null,
+        },
+      }
+    ]
+
